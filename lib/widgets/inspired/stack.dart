@@ -18,7 +18,7 @@ import 'package:flutter/widgets.dart' as widget;
 
 class Stack extends widget.Stack {
   /// Create stack instance
-  const Stack({
+  Stack({
     widget.Key? key,
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
     TextDirection? textDirection,
