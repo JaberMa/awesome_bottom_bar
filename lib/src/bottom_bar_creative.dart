@@ -216,6 +216,23 @@ class _BottomBarCreativeState extends State<BottomBarCreative> {
       );
     }
 
+    if (widget.highlightStyle?.isRectangle == true) {
+      return Container(
+        decoration: BoxDecoration(
+          color: background,
+          borderRadius: BorderRadius.circular(widget.highlightStyle?.borderRadius ?? 0)
+        ),
+        width: size,
+        height: size,
+        child: BuildIcon(
+          item: item,
+          iconColor: colorIcon,
+          iconSize: item.iconSize,
+          countStyle: countStyle,
+        ),
+      );
+    }
+
     return Card(
       margin: EdgeInsets.zero,
       elevation: widget.highlightStyle?.elevation ?? 0,

@@ -6,6 +6,8 @@ class HighlightStyle {
   final Color? color;
   final bool? isHexagon;
   final double? elevation;
+  final bool? isRectangle;
+  final double? borderRadius;
 
   const HighlightStyle({
     this.sizeLarge = false,
@@ -13,5 +15,7 @@ class HighlightStyle {
     this.background,
     this.color,
     this.elevation,
+    this.isRectangle,
+    this.borderRadius,
   });
 }
